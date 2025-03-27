@@ -12,10 +12,10 @@ https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css
 <body>
     <div class="header text-center ">
         <h1 class="font-bold text-3xl">Our products</h1>
-        <input class="border border-black w-1/2 h-150 m-5 " placeholder="Search for a product..."></input>
+        <input id="Search" class="border border-black w-1/2 h-150 m-5 " placeholder="Search for a product..."></input>
         <div class="best p-4 text-center">
             <h1 class="font-bold mt-5 text-3xl" > Best seller </h1>
-            <div class="grid grid-cols-2 md:grid-cols-4 mt-5 gap-5">
+            <div id="product-container" class="grid grid-cols-2 md:grid-cols-4 mt-5 gap-5">
                 <div>
                     <img src="./images/BESTSELLER-1.jpg" class="inline  hover:shadow-xl transform hover:-translate-y-2" alt="">
                     <h1>Rose Plant</h1>
@@ -37,6 +37,18 @@ https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css
                     <p>$20</p>
                 </div>
             </div>
+            <!--side navbar-->
+    <section id="sidenav" class="bg-green-100 fixed z-20 top-0 transition-all duration-1000" style="width: 50%; height:100vh right: -50% ;">
+        <div class="text-right p-5">
+            <p id="closenav" class="inline cursor-pointer">x</p>
+        </div>
+        <ul class="flex flex-col gap-10  items-center text-gray-600  ">
+            <li class="hover:underline hover:text-black">Home</li>
+            <li class="hover:underline hover:text-black" ><a href="product.html">products</a></li>
+            <li class="hover:underline hover:text-black"><a href="contact.html">contact</a></li>
+        </ul>
+
+    </section>
             <div class="best p-4 text-center">
                 
                 <div class="grid grid-cols-2 md:grid-cols-4 mt-5 gap-5">
@@ -78,6 +90,8 @@ https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css
         <p>@ 2021 Greenday.com</p>
 
     </div>
+
+    <script src="product.js"></script>
     
 </body>
 </html>
